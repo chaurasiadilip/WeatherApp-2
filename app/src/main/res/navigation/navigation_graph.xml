@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/splashFragment">
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.dkc.applaunchh.weatherapp.splash.SplashFragment"
+        android:label="SplashFragment"
+        tools:layout="@layout/layout_splash">
+
+        <action
+            android:id="@+id/action_splashFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashFragment_to_userListFragment"
+            app:destination="@id/userListfragmment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.dkc.applaunchh.weatherapp.login.LoginFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/home_fragment">
+        <action
+            android:id="@+id/action_homeFragment_userListFragment"
+            app:destination="@id/userListfragmment"
+            app:popUpTo="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userListfragmment"
+        android:name="com.dkc.applaunchh.weatherapp.userlist.UserListFragment"
+        android:label="UserListFragment"
+        tools:layout="@layout/user_list_fragment">
+        <action
+            android:id="@+id/action_userListFragment_userDetailfragmment"
+            app:destination="@id/UserDetailFragment"
+            app:popUpTo="@id/UserDetailFragment" />
+        <action
+            android:id="@+id/action_userListFragment_weatherFragment"
+            app:destination="@id/weatherFragment"
+            app:popUpTo="@id/UserDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/UserDetailFragment"
+        android:name="com.dkc.applaunchh.weatherapp.userdetail.UserDetailFragment"
+        android:label="UserDetailFragment"
+        tools:layout="@layout/user_detail_fragment">
+        <action
+            android:id="@+id/action_UserDetailFragment_userListFragment"
+            app:destination="@id/userListfragmment"
+            app:popUpTo="@id/UserDetailFragment"
+             />
+    </fragment>
+    <fragment
+        android:id="@+id/weatherFragment"
+        android:label="Weather Info"
+        android:name="com.dkc.applaunchh.weatherapp.weatherdetail.WeatherFragment"
+        tools:layout="@layout/weather_fragment">
+        <action
+            android:id="@+id/action_weatherFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/weatherFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

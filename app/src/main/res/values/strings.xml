@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Weather App</string>
+    <string name="splash_screen">splash Screen</string>
+    <string name="home_screen">Home Screen</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="don_t_have_an_account_sign_up">Don\'t have an account? Sign Up</string>
+    <string name="welcom_back_log_in_to_continue_with_ronnystudio_ui_for_android">Welcom back. Log in to continue.</string>
+    <string name="email">testapp@google.com</string>
+    <string name="pass">Test@123456</string>
+    <string name="password">Password</string>
+    <string name="welcome">Welcome</string>
+    <string name="login">Login</string>
+    <string name="email_id">Email Id</string>
+    <string name="submit">Submit</string>
+    <string name="todo">TODO</string>
+    <string name="user_detail">User Detail</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email_text">Email</string>
+</resources>
